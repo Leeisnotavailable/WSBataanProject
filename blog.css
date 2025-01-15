@@ -1,0 +1,239 @@
+.videobgblog{
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+.blog-video{
+    width: 100%;
+    height: 47.7rem;
+    object-fit: cover;
+}
+
+.textfront{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(255, 255, 255);
+}
+.textfront h1{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.textfront p{
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.blogpage{
+    background-image: url(images/contentbg2.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: auto;
+}
+
+.hrblogmiddle{
+    position: relative;
+    z-index: 1; /* Ensure it's above the background */
+    padding-top: 20px;
+}
+
+.hrblogmiddle hr{
+    border: 0;
+    margin: 30px auto;
+    border-top: 2px solid rgb(198, 194, 194);
+    width: auto;
+}
+
+.hrblogmiddle h2{
+top: 97%;
+left: 50%;
+transform: translate(-50%, -50%); /* this will let the text to be center on <hr> */
+position: absolute;
+margin: 0;
+background-image: url(images/contentbgc.png);
+padding: 5px;
+font-size: 2rem;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.blog_gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 200px;
+    margin: 2%;
+}
+
+
+.blog_gallery img{
+    height: 15rem;
+    width: 37vh;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 10px 12px 20px black;
+    transition: opacity 0.3 ease;
+}
+
+.blog_gallery .bloghyperlink{
+    text-decoration: none;
+    color: black;
+    border-radius: 40px;
+    display: block;
+    position: relative;
+}
+
+.img_place{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.blog_gallery .bloghyperlink::after{
+    content: ''; /* Necessary for the pseudo-element */
+    position: absolute; /* Position it over the image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(233, 232, 232, 0.175), rgba(237, 235, 235, 0.141)); /* Gradient color */
+    opacity: 0; /* this will hidden the linear gradient color */
+    transition: opacity 0.3s ease;
+}
+
+.blog_gallery .bloghyperlink:hover::after{
+    opacity: 1;
+}
+
+.readmore{
+    border-radius: 9px;
+    height: 1.7rem;
+}
+
+.readmore a{
+    text-decoration: none;
+    color: black;
+}
+
+.readmore:hover{
+    background-color: rgba(247, 146, 13, 0.975);
+    transform: scale(1.05);
+}
+
+.readmore a:hover{
+    font-weight: bold;
+}
+
+.closerpage{
+    background-image: url(blogpvb/closer.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
+    margin-top: -30px;
+}
+
+.closerpage .closercontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.closerpage .closercontent h1{
+    margin-top: 3.5rem;
+}
+
+.closerpage .closercontent a{
+    text-decoration: none;
+    color: rgb(249, 159, 15);
+}
+
+footer{
+    margin-top: -10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Location html code */
+/* Location html code */
+/* Location html code */
+
+.location-content{
+    letter-spacing: 2px;
+    margin: -50px 20px;
+}
+
+.blog_gallery .video{
+    width: 37.1vh;
+    height: 15rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 10px 12px 20px black;
+    transition: opacity 0.3 ease;
+}
+
+.see_more{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.see_more button{
+    border-radius: 10px;
+    height: 1.7rem;
+    margin-bottom: 5%;
+}
+
+.see_more button a{
+    text-decoration: none;
+    color: black;
+    height: 1.7rem;
+}
+
+.see_more button:hover{
+    background-color: rgba(247, 146, 13, 0.975);
+    cursor: pointer;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 768px) { /* for mobile user */
+
+.textfront{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bolder;
+}
+
+.textfront h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.textfront p{
+    font-size: 1rem;
+}
+
+}
+

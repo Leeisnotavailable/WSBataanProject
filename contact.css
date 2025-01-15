@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+}
+.contact{
+    background-image: url(images/contentbg2.jpeg);
+    background-image: cover;
+    background-size: cover;
+    background-position: center;
+    min-height: 200vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featured-content{
+    text-align: center;
+}
+
+.featured-content h1{
+    color: rgb(250, 120, 55);
+}
+
+#sortmessage{
+font-size: large;
+}
+
+.container{
+    display: flex;
+    margin-top: 80px;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* this will make each container to be seprated  in short para masama yung icon mamoved kasama ang text*/
+.container .contact_seperate{
+    display: flex;
+    align-content: center;
+}
+
+.container .contact_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .contact_container .icon_box{
+    padding: 22px 0; /* this will make the icon to align on text */
+}
+
+.container .contact_container .icon_box,
+.container .contact_container .Icon_text {
+    margin: 0 10px; /* Spacing between items */
+}
+
+/* this will make center the form */
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.contact_form{
+    margin-top: 100px;
+    width: 50%;
+    padding: 50px;
+    background: rgb(255, 255, 255);
+}
+
+.contact_form .contact_container{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact_form .contact_boxcontent input,
+.contact_form .contact_boxcontent textarea{
+
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contact_form .contact_boxcontent {
+    position: relative; /* Required for absolute positioning of the span */
+    width: 100%; 
+    margin-top: 20px;
+}
+
+.contact_form .contact_boxcontent span{
+    position: absolute; /* Allow positioning relative to the parent */
+    left: 5%; /* this is for position of span */
+    transform: translateX(-10%); /* Move left by half the width of the span */
+    top: 10px; 
+    padding: 5px 0;
+    font-size: 16px;
+    transition: 0.5s;
+    pointer-events: none; /* para kahit click yung letter mag animation sya */
+    color: rgba(102, 102, 102, 0.966);
+
+}
+
+.contact_form .contact_boxcontent input:focus ~ span,
+.contact_form .contact_boxcontent input:not(:placeholder-shown) ~ span,
+.contact_form .contact_boxcontent input:valid ~ span,
+.contact_form .contact_boxcontent textarea:focus ~ span,
+.contact_form .contact_boxcontent textarea:not(:placeholder-shown) ~ span,
+.contact_form .contact_boxcontent textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+
+.contact_form .contact_boxcontent input[type="submit"]{
+    width: 100px;
+    background: #ce7d12;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
+

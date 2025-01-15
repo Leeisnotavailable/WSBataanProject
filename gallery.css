@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.gallery_page{
+    background-image: url(images/gallerybgbataan.jpeg);
+    background-image: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.gallery_front{
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.gallery_front h1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40vh;
+    margin-bottom: 50px;
+}
+
